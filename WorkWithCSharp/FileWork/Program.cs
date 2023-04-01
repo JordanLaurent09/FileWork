@@ -15,8 +15,12 @@ namespace FileWork
             Console.WriteLine(_directory);
             string _fileAddressFirstWay = Directory.GetParent(_directory).Parent.Parent.FullName;
             Console.WriteLine(_fileAddressFirstWay);
-            string _fileAddressSecondWay = new DirectoryInfo(_directory).Parent.Parent.Parent.FullName;
+            string _fileAddressSecondWay = new DirectoryInfo(_directory).Parent.Parent.FullName;
             Console.WriteLine(_fileAddressSecondWay);
+            string _fileName = "MyFile.txt";
+            string _path = Path.Combine(_fileAddressSecondWay, _fileName);
+            string _text = File.ReadAllText(_path);
+            Console.WriteLine(_text);
         }
     }
 }
