@@ -182,11 +182,11 @@ namespace FileWork
             {
                 Console.Write("Какую строку удаляем? (номер от нуля): ");
                 int lineNumber = int.Parse(Console.ReadLine());
-                try
+                if(lineNumber < _data.Count)
                 {
                     _data.RemoveAt(lineNumber);
                 }
-                catch
+                else
                 {
                     Console.WriteLine("Не удалось найти строчку, возврат в главное меню");
                 }
@@ -196,11 +196,11 @@ namespace FileWork
             {
                 Console.WriteLine("Выберите номер желаемой строчки");
                 int lineNumber = int.Parse(Console.ReadLine());
-                try
+                if (lineNumber < _data.Count)
                 {
                     _data[lineNumber] = _data[lineNumber].ToUpper();
                 }
-                catch
+                else
                 {
                     Console.WriteLine("Не удалось найти строчку, возврат в главное меню");
                 }
