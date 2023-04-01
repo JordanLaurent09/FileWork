@@ -1,10 +1,6 @@
-раз раз
-два два
-тр три
-строка еще одна
-это мой файл
-мойэто файл
-пишу сюда
-всякое
-да
-три четыре
+this is
+my horse
+my horse
+is amazing
+give it a lick
+"Oh, this is disgusting"
