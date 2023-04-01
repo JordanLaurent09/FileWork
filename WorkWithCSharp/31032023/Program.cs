@@ -13,6 +13,7 @@ namespace _31032023
             int[] firstArray = new int[10];
             int[] secondArray = new int[20];
 
+
             firstArray = FillArray(firstArray.Length);
             secondArray = FillArray(secondArray.Length);
 
