@@ -17,7 +17,7 @@ namespace FileWork
             List<string> _data = new List<string>();
             bool _isExit = false;
 
-            string[] _commandList = new string[] { "exit", "remove", "help", "?", "uppercase", "alllines", "sumlines", "sumnumbers" };
+            string[] _commandList = new string[] { "exit", "remove", "help", "?", "uppercase", "alllines", "sumlines", "sumnumbers", "numsamount", "totalnumssum"};
 
 
             _data = ReadFile();
@@ -70,6 +70,12 @@ namespace FileWork
                         break;
                     case "sumnumbers":
                         SumTwoNumbers();
+                        break;
+                    case "numsamount":
+                        AmountOfNumberLines();
+                        break;
+                    case "totalnumssum":
+                        SumOfNumbersInLines();
                         break;
                 }
 
@@ -165,6 +171,47 @@ namespace FileWork
                 }
             }
 
+            // 4. Метод, определяющий количество числовых строк
+            void AmountOfNumberLines()
+            {
+                float parsingResult;
+                int numberLineCounter = 0;
+
+                foreach(string item in _data)
+                {
+                    if (float.TryParse(item, out parsingResult))
+                    {
+                        numberLineCounter++;
+                    }
+                }
+                if (numberLineCounter == 0)
+                {
+                    Console.WriteLine("В файле нет числовых строк");
+                }
+                else
+                {
+                    Console.WriteLine($"В файле содержится {numberLineCounter} числовых строк");
+                }
+            }
+
+
+
+            // 5. Метод, определяющий сумму содержимого числовых строк
+            void SumOfNumbersInLines()
+            {
+                float parsingResult;
+                float totalSumOfNumbers = 0;
+
+                foreach (string item in _data)
+                {
+                    if (float.TryParse(item, out parsingResult))
+                    {
+                        totalSumOfNumbers += parsingResult;
+                    }
+                }
+                Console.WriteLine($"Общая сумма чисел в строках файла равна {totalSumOfNumbers}");
+            }
+
 
 
             void HelperMethod()
@@ -175,7 +222,9 @@ namespace FileWork
                     "\n3.uppercase - перезаписывает содержимое текстовой строки в верхнем регистре" +
                     "\n4.alllines - выводит количество строчек в файле" +
                     "\n5.sumlines - осуществляет конкантенацию двух выбранных строчек" +
-                    "\n6.sumnumbers - осуществляет операцию сложения двух чисел из содержимого файла");
+                    "\n6.sumnumbers - осуществляет операцию сложения двух чисел из содержимого файла" +
+                    "\n7.numsamount - выявляет количество числовых строк в файле" +
+                    "\n8.totalnumssum - определяет сумму числового содержимого  строк");
             }
 
             void RemoveLines()
