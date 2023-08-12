@@ -12,10 +12,16 @@ namespace SortingAlgorithms
     {
         static void Main(string[] args)
         {
+            int[] array = CreateArray(20, 0, 21);
+            PrintArray(array);
+            array = BubbleSort(array);
+            Console.WriteLine();
+            PrintArray(array);
         }
 
         // Алгоритм сортировки пузырьком
-        int[] BubbleSort(int[] array)
+        // Bubble sorting algorithm
+        static int[] BubbleSort(int[] array)
         {
             for(int i = 0; i < array.Length - 1; i++)
             {
@@ -35,7 +41,7 @@ namespace SortingAlgorithms
 
         // Вспомогательная функция по созданию случайного массива
         // Adding function using for fast creation of user array
-        int[] CreateArray(int arraySize, int lowestElementValue, int highestElementValue)
+        static int[] CreateArray(int arraySize, int lowestElementValue, int highestElementValue)
         {
             int[] array = new int[arraySize];
             Random random = new Random();
@@ -44,6 +50,16 @@ namespace SortingAlgorithms
                 array[i] = random.Next(lowestElementValue, highestElementValue);
             }
             return array;
+        }
+
+        // Вспомогательная функция по выводу массивана экран
+        // Adding function for print the array
+        static void PrintArray(int[] array)
+        {
+            foreach(int item in array)
+            {
+                Console.Write($"{item} ");
+            }
         }
     }
 }
