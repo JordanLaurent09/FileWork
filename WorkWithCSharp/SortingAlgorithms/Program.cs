@@ -14,7 +14,8 @@ namespace SortingAlgorithms
         {
             int[] array = CreateArray(20, 0, 21);
             PrintArray(array);
-            array = BubbleSort(array);
+            //array = BubbleSort(array);
+            array = SelectionSort(array);
             Console.WriteLine();
             PrintArray(array);
         }
@@ -35,6 +36,32 @@ namespace SortingAlgorithms
                     }
                 }
             }
+            return array;
+        }
+
+
+        // Алгоритм сортировки выбором
+
+        static int[] SelectionSort(int[] array)
+        {
+            for(int i = 0; i < array.Length - 1; i++)
+            {
+                int nMin = i;
+                for (int j = i + 1; j < array.Length; j++)
+                {
+                    if(array[nMin] > array[j])
+                    {
+                        nMin = j;
+                    }
+                }
+                if (nMin != i)
+                {
+                    int temp = array[nMin];
+                    array[nMin] = array[i];
+                    array[i] = temp;
+                }
+            }
+
             return array;
         }
 
