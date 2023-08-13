@@ -41,7 +41,7 @@ namespace SortingAlgorithms
 
 
         // Алгоритм сортировки выбором
-
+        // Selection sorting algorithm
         static int[] SelectionSort(int[] array)
         {
             for(int i = 0; i < array.Length - 1; i++)
