@@ -68,7 +68,7 @@ namespace SortingAlgorithms
 
 
         // Алгоритм сортировки простыми вставками
-
+        // Insertion sorting algorithm
 
         static int[] InsertionSort(int[] array)
         {
