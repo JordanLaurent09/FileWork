@@ -16,7 +16,8 @@ namespace SortingAlgorithms
             PrintArray(array);
             //array = BubbleSort(array);
             //array = SelectionSort(array);
-            array = InsertionSort(array);
+            //array = InsertionSort(array);
+            array = InsertBarrierSort(array);
             Console.WriteLine();
             PrintArray(array);
         }
@@ -88,6 +89,32 @@ namespace SortingAlgorithms
                     array[j + 1] = x;
                 }
             }
+            return array;
+        }
+
+
+        // Алгоритм сортировки прямыми вставками с барьером
+        // Barrier insertion sorting algorithm
+
+        static int[] InsertBarrierSort(int[] array)
+        {
+            for(int i = 1; i < array.Length; i++)
+            {
+                if(array[i - 1] > array[i])
+                {
+                    array[0] = array[i];
+                    int j = i - 1;
+
+                    while(array[j] > array[0])
+                    {
+                        array[j + 1] = array[j];
+                        j--;
+                    }
+
+                    array[j + 1] = array[0];
+                }
+            }
+
             return array;
         }
 
