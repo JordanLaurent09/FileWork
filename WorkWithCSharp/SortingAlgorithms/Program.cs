@@ -13,13 +13,30 @@ namespace SortingAlgorithms
         static void Main(string[] args)
         {
             int[] array = CreateArray(20, 0, 21);
+            Console.WriteLine("Исходный неотсортированный массив:");
             PrintArray(array);
-            //array = BubbleSort(array);
-            //array = SelectionSort(array);
-            //array = InsertionSort(array);
-            array = InsertBarrierSort(array);
             Console.WriteLine();
-            PrintArray(array);
+            Console.WriteLine("Чтобы выбрать способ сортировки, введите цифру от 1 до 10");
+            int choice = int.Parse(Console.ReadLine());
+
+            switch (choice)
+            {
+                case 1:
+                    Console.WriteLine("Сортировка пузырьком:");
+                    array = BubbleSort(array);
+                    PrintArray(array);
+                    break;
+                case 2:
+                    Console.WriteLine("Сортировка выбором:");
+                    array = SelectionSort(array);
+                    PrintArray(array);
+                    break;
+                case 3:
+                    Console.WriteLine("Сортировка простыми вставками:");
+                    array = InsertionSort(array);
+                    PrintArray(array);
+                    break;
+            }
         }
 
         // Алгоритм сортировки пузырьком
