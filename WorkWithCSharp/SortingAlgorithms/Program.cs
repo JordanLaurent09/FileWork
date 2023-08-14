@@ -15,7 +15,8 @@ namespace SortingAlgorithms
             int[] array = CreateArray(20, 0, 21);
             PrintArray(array);
             //array = BubbleSort(array);
-            array = SelectionSort(array);
+            //array = SelectionSort(array);
+            array = InsertionSort(array);
             Console.WriteLine();
             PrintArray(array);
         }
@@ -65,6 +66,30 @@ namespace SortingAlgorithms
             return array;
         }
 
+
+        // Алгоритм сортировки простыми вставками
+
+
+        static int[] InsertionSort(int[] array)
+        {
+            for(int i = 1; i < array.Length; i++)
+            {
+                if(array[i - 1] > array[i])
+                {
+                    int x = array[i];
+                    int j = i - 1;
+
+                    while(j >= 0 && array[j] > x)
+                    {
+                        array[j + 1] = array[j];
+                        j--;
+                    }
+
+                    array[j + 1] = x;
+                }
+            }
+            return array;
+        }
 
         // Вспомогательная функция по созданию случайного массива
         // Adding function using for fast creation of user array
