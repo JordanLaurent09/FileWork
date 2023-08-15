@@ -157,5 +157,16 @@ namespace SortingAlgorithms
                 Console.Write($"{item} ");
             }
         }
+
+
+        // Вспомогательная функция по перестановке соседних элементов массива
+        // Adding function for swap elements of array
+
+        void Swap(ref int a, ref int b)
+        {
+            int temp = a;
+            a = b;
+            b = temp;
+        } 
     }
 }
