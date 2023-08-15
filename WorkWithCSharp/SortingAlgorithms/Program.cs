@@ -36,6 +36,11 @@ namespace SortingAlgorithms
                     array = InsertionSort(array);
                     PrintArray(array);
                     break;
+                case 4:
+                    Console.WriteLine("Шейкерная сортировка:");
+                    array = ShakerSort(array);
+                    PrintArray(array);
+                    break;
             }
         }
 
