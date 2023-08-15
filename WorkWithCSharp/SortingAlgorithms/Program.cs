@@ -135,6 +135,38 @@ namespace SortingAlgorithms
             return array;
         }
 
+        // Алгоритм шейкерной сортировки
+        // Shaker sorting algorithm
+
+        static int[] ShakerSort(int[] array)
+        {
+            for(int i = 0; i < array.Length / 2; i++)
+            {
+                bool swapFlag = false;
+                for(int j = i; j < array.Length - i - 1; j++)
+                {
+                    if(array[j] > array[j + 1])
+                    {
+                        Swap(ref array[j], ref array[j + 1]);
+                        swapFlag = true;
+                    }
+                }
+                for(int j = array.Length - 2 - i; j > i; j--)
+                {
+                    if(array[j - 1] > array[j])
+                    {
+                        Swap(ref array[j - 1], ref array[j]);
+                        swapFlag = true;
+                    }
+                }
+                if(!swapFlag)
+                {
+                    break;
+                }
+            }
+            return array;
+        }
+
         // Вспомогательная функция по созданию случайного массива
         // Adding function using for fast creation of user array
         static int[] CreateArray(int arraySize, int lowestElementValue, int highestElementValue)
@@ -162,7 +194,7 @@ namespace SortingAlgorithms
         // Вспомогательная функция по перестановке соседних элементов массива
         // Adding function for swap elements of array
 
-        void Swap(ref int a, ref int b)
+        static void Swap(ref int a, ref int b)
         {
             int temp = a;
             a = b;
