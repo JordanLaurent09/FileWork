@@ -57,6 +57,11 @@ namespace SomeArrayFunctions
             //6. Метод IndexOf ищет заданное значение внутри массива и возвращает индекс его первого вхождения в массив
 
             Console.WriteLine(Array.IndexOf(array, 21));
+
+
+            //7. Метод LastIndexOf возвращает индекс последнего вхождения искомого числа в массив
+
+            Console.WriteLine(Array.LastIndexOf(array, 20));
         }
 
 
