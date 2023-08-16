@@ -30,6 +30,11 @@ namespace SomeArrayFunctions
             //3. Метод Sort помогает отсортировать элементы массива
             Array.Sort(array);
             PrintArray(array);
+
+
+            //4. Метод BinarySearch ищет и возвращает индекс искомого числа в предварительно отсортированном массиве;
+            // в случае отсутствия данного числа метод возвращает отрицательное значение
+            Console.WriteLine(Array.BinarySearch(array, 22));
         }
 
 
