@@ -62,6 +62,13 @@ namespace SomeArrayFunctions
             //7. Метод LastIndexOf возвращает индекс последнего вхождения искомого числа в массив
 
             Console.WriteLine(Array.LastIndexOf(array, 20));
+
+            //8. Метод Resize изменяет размер массива до указанной величины
+            Array.Resize(ref array, 13);
+
+            Console.WriteLine(array.Length);
+
+            PrintArray(array);
         }
 
 
