@@ -23,6 +23,13 @@ namespace SomeArrayFunctions
             //2. Метод Reverse переставляет все элементы массива в обратном порядке
             Array.Reverse(array);
             PrintArray(array);
+
+            array = CreateArray(20, 0, 28);
+            PrintArray(array);
+
+            //3. Метод Sort помогает отсортировать элементы массива
+            Array.Sort(array);
+            PrintArray(array);
         }
 
 
