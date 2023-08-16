@@ -172,6 +172,27 @@ namespace SortingAlgorithms
             return array;
         }
 
+        // Алгоритм сортировки по частям
+        // Stooge sorting algorithm
+         
+        static int[] StoogeSort(int[] array, int startIndex, int endIndex)
+        {
+            if(array[startIndex] > array[endIndex])
+            {
+                Swap(ref array[startIndex], ref array[endIndex]);
+            }
+            if(endIndex - startIndex > 1)
+            {
+                int len = (endIndex - startIndex + 1) / 3;
+                StoogeSort(array, startIndex, endIndex - len);
+                StoogeSort(array, startIndex + len, endIndex);
+                StoogeSort(array, startIndex, endIndex - len);
+            }
+            return array;
+        }
+
+
+
         // Вспомогательная функция по созданию случайного массива
         // Adding function using for fast creation of user array
         static int[] CreateArray(int arraySize, int lowestElementValue, int highestElementValue)
