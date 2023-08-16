@@ -35,6 +35,20 @@ namespace SomeArrayFunctions
             //4. Метод BinarySearch ищет и возвращает индекс искомого числа в предварительно отсортированном массиве;
             // в случае отсутствия данного числа метод возвращает отрицательное значение
             Console.WriteLine(Array.BinarySearch(array, 22));
+
+
+            array = CreateArray(20, 0, 28);
+            PrintArray(array);
+
+
+            //5. Метод ConstrainedCopy копирует выбранный диапазон элементов из одного массива в другой
+
+            // Для начала создадим дополнительный массив
+            int[] arrayTwo = new int[20];
+
+            // Теперь применим метод ConstrainedCopy
+            Array.ConstrainedCopy(array, 3, arrayTwo, 3, 4);
+            PrintArray(arrayTwo);
         }
 
 
