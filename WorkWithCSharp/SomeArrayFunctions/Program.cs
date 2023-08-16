@@ -10,10 +10,13 @@ namespace SomeArrayFunctions
     {
         static void Main(string[] args)
         {
-            
+            int[] array = CreateArray(20, 0, 28);
+            PrintArray(array);
         }
 
 
+
+        // Вспомогательная функция для вывода массива на экран
         static void PrintArray(int[] array)
         {
             foreach(int item in array)
@@ -23,6 +26,7 @@ namespace SomeArrayFunctions
             Console.WriteLine();
         }
 
+        // Вспомогательная функция для создания нового массива
         static int[] CreateArray(int arrayLength, int lowerLimit, int upperLimit)
         {
             Random random = new Random();
