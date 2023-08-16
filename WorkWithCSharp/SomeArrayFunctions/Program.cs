@@ -49,6 +49,14 @@ namespace SomeArrayFunctions
             // Теперь применим метод ConstrainedCopy
             Array.ConstrainedCopy(array, 3, arrayTwo, 3, 4);
             PrintArray(arrayTwo);
+
+
+            array = CreateArray(20, 0, 28);
+            PrintArray(array);
+
+            //6. Метод IndexOf ищет заданное значение внутри массива и возвращает индекс его первого вхождения в массив
+
+            Console.WriteLine(Array.IndexOf(array, 21));
         }
 
 
