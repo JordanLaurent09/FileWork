@@ -41,6 +41,11 @@ namespace SortingAlgorithms
                     array = ShakerSort(array);
                     PrintArray(array);
                     break;
+                case 5:
+                    Console.WriteLine("Сортировка по частям");
+                    array = StoogeSort(array, 0, array.Length - 1);
+                    PrintArray(array);
+                    break;
             }
         }
 
