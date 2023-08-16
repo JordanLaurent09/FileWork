@@ -12,6 +12,10 @@ namespace SomeArrayFunctions
         {
             int[] array = CreateArray(20, 0, 28);
             PrintArray(array);
+
+            //1. Метод Clear позволяет удалять элементы, входящие в выбранный диапазон номеров индексов массива
+            Array.Clear(array, 0, array.Length);
+            PrintArray(array);
         }
 
 
