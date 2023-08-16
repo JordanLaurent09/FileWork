@@ -16,6 +16,13 @@ namespace SomeArrayFunctions
             //1. Метод Clear позволяет удалять элементы, входящие в выбранный диапазон номеров индексов массива
             Array.Clear(array, 0, array.Length);
             PrintArray(array);
+
+            array = CreateArray(20, 0, 28);
+            PrintArray(array);
+
+            //2. Метод Reverse переставляет все элементы массива в обратном порядке
+            Array.Reverse(array);
+            PrintArray(array);
         }
 
 
