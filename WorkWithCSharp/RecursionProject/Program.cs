@@ -10,6 +10,14 @@ namespace RecursionProject
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(RecFactorial(5));
+        }
+
+        // Рекурсивная функция по вычислению факториала
+        static long RecFactorial(int n)
+        {
+            if (n == 0 || n == 1) return 1;
+            return n * RecFactorial(n - 1);
         }
     }
 }
