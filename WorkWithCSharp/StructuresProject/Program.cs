@@ -13,6 +13,14 @@ namespace StructuresProject
             public string name;
             public string surname;
         }
+
+
+        struct Geography
+        {
+            public string country;
+            public string city;
+        }
+
         static void Main(string[] args)
         {
             // Первый способ инициализации структуры
@@ -39,6 +47,22 @@ namespace StructuresProject
             foreach(People person in people)
             {
                 Console.WriteLine($"{person.name} {person.surname}");
+            }
+
+
+            Geography[] places = new Geography[5];
+            for(int i = 0; i < places.Length; i++)
+            {
+                places[i] = new Geography();
+                Console.WriteLine("Введите название страны");
+                places[i].country = Console.ReadLine();
+                Console.WriteLine("Введите название города");
+                places[i].city = Console.ReadLine();
+            }
+
+            foreach(Geography place in places)
+            {
+                if (place.country == "Italy") Console.WriteLine(place.city);
             }
         }
     }
