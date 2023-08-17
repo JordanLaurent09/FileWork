@@ -197,7 +197,22 @@ namespace SortingAlgorithms
         }
 
 
-        // 
+        // Алгоритм блинной сортировки
+        // Pancake sorting algorithm
+
+        static int[] PancakeSort(int[] array)
+        {
+            for(int i = array.Length - 1; i >= 0; i--)
+            {
+                int maxIndex = IndexOfMax(array, i);
+                if(maxIndex != i)
+                {
+                    Flip(array, maxIndex);
+                    Flip(array, i);
+                }
+            }
+            return array;
+        }
 
         // Вспомогательная функция по созданию случайного массива
         // Adding function using for fast creation of user array
