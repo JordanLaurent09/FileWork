@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeArrayFunctions", "SomeA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursionProject", "RecursionProject\RecursionProject.csproj", "{555DD613-48CB-4901-A249-B247985EFDB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuresProject", "StructuresProject\StructuresProject.csproj", "{C1264D42-BB98-48C1-9E7F-7E1413C7C1E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{555DD613-48CB-4901-A249-B247985EFDB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{555DD613-48CB-4901-A249-B247985EFDB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{555DD613-48CB-4901-A249-B247985EFDB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1264D42-BB98-48C1-9E7F-7E1413C7C1E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1264D42-BB98-48C1-9E7F-7E1413C7C1E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1264D42-BB98-48C1-9E7F-7E1413C7C1E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1264D42-BB98-48C1-9E7F-7E1413C7C1E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

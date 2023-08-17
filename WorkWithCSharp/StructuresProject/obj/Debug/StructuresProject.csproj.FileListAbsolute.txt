@@ -1,0 +1,7 @@
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StructuresProject\bin\Debug\StructuresProject.exe.config
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StructuresProject\bin\Debug\StructuresProject.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StructuresProject\bin\Debug\StructuresProject.pdb
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StructuresProject\obj\Debug\StructuresProject.csproj.AssemblyReference.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StructuresProject\obj\Debug\StructuresProject.csproj.CoreCompileInputs.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StructuresProject\obj\Debug\StructuresProject.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StructuresProject\obj\Debug\StructuresProject.pdb
