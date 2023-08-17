@@ -4,3 +4,4 @@ C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\RecursionProject\bin\De
 C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\RecursionProject\obj\Debug\RecursionProject.csproj.CoreCompileInputs.cache
 C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\RecursionProject\obj\Debug\RecursionProject.exe
 C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\RecursionProject\obj\Debug\RecursionProject.pdb
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\RecursionProject\obj\Debug\RecursionProject.csproj.AssemblyReference.cache
