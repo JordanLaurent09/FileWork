@@ -21,6 +21,14 @@ namespace StructuresProject
             public string city;
         }
 
+
+        struct PhoneBook
+        {
+            public string surname;
+            public string address;
+            public long number;
+        }
+
         static void Main(string[] args)
         {
             // Первый способ инициализации структуры
@@ -54,15 +62,33 @@ namespace StructuresProject
             for(int i = 0; i < places.Length; i++)
             {
                 places[i] = new Geography();
-                Console.WriteLine("Введите название страны");
+                Console.WriteLine("Введите название страны:");
                 places[i].country = Console.ReadLine();
-                Console.WriteLine("Введите название города");
+                Console.WriteLine("Введите название города:");
                 places[i].city = Console.ReadLine();
             }
 
             foreach(Geography place in places)
             {
                 if (place.country == "Italy") Console.WriteLine(place.city);
+            }
+
+
+            PhoneBook[] data = new PhoneBook[5];
+            for(int i = 0; i < data.Length; i++)
+            {
+                data[i] = new PhoneBook();
+                Console.WriteLine("Введите фамилию:");
+                data[i].surname = Console.ReadLine();
+                Console.WriteLine("Введите адрес:");
+                data[i].address = Console.ReadLine();
+                Console.WriteLine("Введите номер:");
+                data[i].number = long.Parse(Console.ReadLine());
+            }
+
+            foreach(PhoneBook item in data)
+            {
+                if (item.number / 1000000 == 3) Console.WriteLine($"Фамилия абонента: {item.surname} и он живет по адресу: {item.address}");
             }
         }
     }
