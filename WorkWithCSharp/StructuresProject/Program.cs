@@ -57,7 +57,8 @@ namespace StructuresProject
                 Console.WriteLine($"{person.name} {person.surname}");
             }
 
-
+            // Создание массива структур типа Geography 
+            // и поиск города по некому условию
             Geography[] places = new Geography[5];
             for(int i = 0; i < places.Length; i++)
             {
@@ -73,7 +74,8 @@ namespace StructuresProject
                 if (place.country == "Italy") Console.WriteLine(place.city);
             }
 
-
+            // Создание массива структур типа PhoneBook
+            // и поиск информации по конкретному условию
             PhoneBook[] data = new PhoneBook[5];
             for(int i = 0; i < data.Length; i++)
             {
