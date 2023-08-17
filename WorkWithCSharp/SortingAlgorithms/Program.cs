@@ -246,6 +246,16 @@ namespace SortingAlgorithms
             }
         }
 
+        // Adding function for finding index of max element
 
+        static int IndexOfMax(int[] array, int n)
+        {
+            int result = 0;
+            for(int i = 0; i <= n; i++)
+            {
+                if (array[i] > array[result]) result = i;
+            }
+            return result;
+        }
     }
 }
