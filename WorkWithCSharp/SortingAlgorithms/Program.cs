@@ -46,6 +46,11 @@ namespace SortingAlgorithms
                     array = StoogeSort(array, 0, array.Length - 1);
                     PrintArray(array);
                     break;
+                case 6:
+                    Console.WriteLine("Блинная сортировка:");
+                    array = PancakeSort(array);
+                    PrintArray(array);
+                    break;
             }
         }
 
