@@ -24,6 +24,22 @@ namespace StructuresProject
             // Второй способ инициализации структуры
             People personTwo = new People() { name = "Richard", surname = "Robinson" };
             Console.WriteLine($"{personTwo.name} {personTwo.surname}");
+
+            // Массив из типа Структура
+            People[] people = new People[5];
+            for(int i = 0; i <people.Length; i++)
+            {
+                people[i] = new People();
+                Console.WriteLine("Добавьте имя студента:");
+                people[i].name = Console.ReadLine();
+                Console.WriteLine("Добавьте фамилию студента:");
+                people[i].surname = Console.ReadLine();
+            }
+
+            foreach(People person in people)
+            {
+                Console.WriteLine($"{person.name} {person.surname}");
+            }
         }
     }
 }
