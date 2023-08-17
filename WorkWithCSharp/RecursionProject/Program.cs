@@ -14,6 +14,10 @@ namespace RecursionProject
             Console.WriteLine(RecFactorial(5));
             Console.WriteLine("Возведение числа в степень:");
             Console.WriteLine(Power(5, 2));
+            Console.WriteLine("Подсчет суммы цифр в числе:");
+            Console.WriteLine(Sum(222));
+            Console.WriteLine("Подсчет количества разрядов числа:");
+            Console.WriteLine(CountNumber(2005));
         }
 
         // Рекурсивная функция по вычислению факториала
