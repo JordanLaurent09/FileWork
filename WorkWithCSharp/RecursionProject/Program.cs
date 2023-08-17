@@ -40,5 +40,14 @@ namespace RecursionProject
             if (n < 10) return n;
             return n % 10 + Sum(n / 10);
         }
+
+
+        // Рекурсивная функция по подсчету количества разрядов в числе
+
+        static int CountNumber(int n)
+        {
+            if (n < 10) return 1;
+            return 1 + CountNumber(n / 10);
+        }
     }
 }
