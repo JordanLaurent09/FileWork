@@ -197,6 +197,7 @@ namespace SortingAlgorithms
         }
 
 
+        // 
 
         // Вспомогательная функция по созданию случайного массива
         // Adding function using for fast creation of user array
@@ -230,6 +231,21 @@ namespace SortingAlgorithms
             int temp = a;
             a = b;
             b = temp;
-        } 
+        }
+
+
+        // Adding flip function
+
+        static void Flip(int[] array, int end)
+        {
+            for (var start = 0; start < end; start++, end--)
+            {
+                int temp = array[start];
+                array[start] = array[end];
+                array[end] = temp;
+            }
+        }
+
+
     }
 }
