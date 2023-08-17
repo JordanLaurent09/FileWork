@@ -31,5 +31,14 @@ namespace RecursionProject
             if (power == 1) return number;
             return number * Power(number, power - 1);
         }
+
+
+        // Рекурсивная функция по подсчету суммы цифр числа
+
+        static double Sum(int n)
+        {
+            if (n < 10) return n;
+            return n % 10 + Sum(n / 10);
+        }
     }
 }
