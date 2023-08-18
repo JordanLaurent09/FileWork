@@ -76,8 +76,21 @@ namespace DateAndTimeProject
             // Y, y - формат года
 
             Console.WriteLine(nowDay.ToString("D"));
-
-
+            Console.WriteLine(nowDay.ToString("d"));
+            Console.WriteLine(nowDay.ToString("F"));
+            Console.WriteLine(nowDay.ToString("f"));
+            Console.WriteLine(nowDay.ToString("G"));
+            Console.WriteLine(nowDay.ToString("g"));
+            Console.WriteLine(nowDay.ToString("M"));
+            Console.WriteLine(nowDay.ToString("O"));
+            Console.WriteLine(nowDay.ToString("R"));
+            Console.WriteLine(nowDay.ToString("s"));
+            Console.WriteLine(nowDay.ToString("T"));
+            Console.WriteLine(nowDay.ToString("t"));
+            Console.WriteLine(nowDay.ToString("U"));
+            Console.WriteLine(nowDay.ToString("u"));
+            Console.WriteLine(nowDay.ToString("Y"));
+            
         }
     }
 }
