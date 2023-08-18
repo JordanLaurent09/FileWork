@@ -16,6 +16,8 @@ namespace DateAndTimeProject
             Console.WriteLine($"Значение по умолчанию: {dateTime}");
 
             Console.WriteLine($"Минимальное значение: {DateTime.MinValue}");
+
+            Console.WriteLine($"Максимальное значение: {DateTime.MaxValue}");
         }
     }
 }
