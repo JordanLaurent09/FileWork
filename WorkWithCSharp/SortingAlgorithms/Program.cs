@@ -58,11 +58,11 @@ namespace SortingAlgorithms
         // Bubble sorting algorithm
         static int[] BubbleSort(int[] array)
         {
-            for(int i = 0; i < array.Length - 1; i++)
+            for (int i = 0; i < array.Length - 1; i++)
             {
-                for(int j = i + 1; j < array.Length; j++)
+                for (int j = i + 1; j < array.Length; j++)
                 {
-                    if(array[i] > array[j])
+                    if (array[i] > array[j])
                     {
                         int temp = array[i];
                         array[i] = array[j];
@@ -78,12 +78,12 @@ namespace SortingAlgorithms
         // Selection sorting algorithm
         static int[] SelectionSort(int[] array)
         {
-            for(int i = 0; i < array.Length - 1; i++)
+            for (int i = 0; i < array.Length - 1; i++)
             {
                 int nMin = i;
                 for (int j = i + 1; j < array.Length; j++)
                 {
-                    if(array[nMin] > array[j])
+                    if (array[nMin] > array[j])
                     {
                         nMin = j;
                     }
@@ -105,14 +105,14 @@ namespace SortingAlgorithms
 
         static int[] InsertionSort(int[] array)
         {
-            for(int i = 1; i < array.Length; i++)
+            for (int i = 1; i < array.Length; i++)
             {
-                if(array[i - 1] > array[i])
+                if (array[i - 1] > array[i])
                 {
                     int x = array[i];
                     int j = i - 1;
 
-                    while(j >= 0 && array[j] > x)
+                    while (j >= 0 && array[j] > x)
                     {
                         array[j + 1] = array[j];
                         j--;
@@ -130,14 +130,14 @@ namespace SortingAlgorithms
 
         static int[] InsertBarrierSort(int[] array)
         {
-            for(int i = 1; i < array.Length; i++)
+            for (int i = 1; i < array.Length; i++)
             {
-                if(array[i - 1] > array[i])
+                if (array[i - 1] > array[i])
                 {
                     array[0] = array[i];
                     int j = i - 1;
 
-                    while(array[j] > array[0])
+                    while (array[j] > array[0])
                     {
                         array[j + 1] = array[j];
                         j--;
@@ -155,26 +155,26 @@ namespace SortingAlgorithms
 
         static int[] ShakerSort(int[] array)
         {
-            for(int i = 0; i < array.Length / 2; i++)
+            for (int i = 0; i < array.Length / 2; i++)
             {
                 bool swapFlag = false;
-                for(int j = i; j < array.Length - i - 1; j++)
+                for (int j = i; j < array.Length - i - 1; j++)
                 {
-                    if(array[j] > array[j + 1])
+                    if (array[j] > array[j + 1])
                     {
                         Swap(ref array[j], ref array[j + 1]);
                         swapFlag = true;
                     }
                 }
-                for(int j = array.Length - 2 - i; j > i; j--)
+                for (int j = array.Length - 2 - i; j > i; j--)
                 {
-                    if(array[j - 1] > array[j])
+                    if (array[j - 1] > array[j])
                     {
                         Swap(ref array[j - 1], ref array[j]);
                         swapFlag = true;
                     }
                 }
-                if(!swapFlag)
+                if (!swapFlag)
                 {
                     break;
                 }
@@ -184,14 +184,14 @@ namespace SortingAlgorithms
 
         // Алгоритм сортировки по частям
         // Stooge sorting algorithm
-         
+
         static int[] StoogeSort(int[] array, int startIndex, int endIndex)
         {
-            if(array[startIndex] > array[endIndex])
+            if (array[startIndex] > array[endIndex])
             {
                 Swap(ref array[startIndex], ref array[endIndex]);
             }
-            if(endIndex - startIndex > 1)
+            if (endIndex - startIndex > 1)
             {
                 int len = (endIndex - startIndex + 1) / 3;
                 StoogeSort(array, startIndex, endIndex - len);
@@ -207,14 +207,37 @@ namespace SortingAlgorithms
 
         static int[] PancakeSort(int[] array)
         {
-            for(int i = array.Length - 1; i >= 0; i--)
+            for (int i = array.Length - 1; i >= 0; i--)
             {
                 int maxIndex = IndexOfMax(array, i);
-                if(maxIndex != i)
+                if (maxIndex != i)
                 {
                     Flip(array, maxIndex);
                     Flip(array, i);
                 }
+            }
+            return array;
+        }
+
+
+        // Алгоритм сортировки Шелла
+        // Shell sorting algorithm
+
+        static int[] ShellSort(int[] array)
+        {
+            int d = array.Length / 2;
+            while(d >= 1)
+            {
+                for (int i = d; i < array.Length; i++)
+                {
+                    int j = i;
+                    while ((j >= d) && (array[j - d] > array[j]))
+                    {
+                        Swap(ref array[j], ref array[j - d]);
+                        j = j - d;
+                    }
+                }
+                d = d / 2;
             }
             return array;
         }
