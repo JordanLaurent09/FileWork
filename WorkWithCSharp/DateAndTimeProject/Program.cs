@@ -14,6 +14,8 @@ namespace DateAndTimeProject
             // Создание объекта типа "дата-время"
             DateTime dateTime = new DateTime();
             Console.WriteLine($"Значение по умолчанию: {dateTime}");
+
+            Console.WriteLine($"Минимальное значение: {DateTime.MinValue}");
         }
     }
 }
