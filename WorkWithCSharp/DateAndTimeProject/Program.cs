@@ -90,7 +90,26 @@ namespace DateAndTimeProject
             Console.WriteLine(nowDay.ToString("U"));
             Console.WriteLine(nowDay.ToString("u"));
             Console.WriteLine(nowDay.ToString("Y"));
-            
+
+
+            // Небольшой код по расчету количества лет между двумя датами
+
+            DateTime d1 = new DateTime(2015, 6, 18);
+            DateTime d2 = new DateTime(2021, 11, 24);
+
+            Console.WriteLine((int)d2.Subtract(d1).TotalDays/365);
+
+            // Расчет суммы оплаты за электричество за месяц
+
+            DateTime d3 = new DateTime(2023, 4, 1);
+            DateTime d4 = new DateTime(2023, 3, 1);
+
+            int hours = d3.Subtract(d4).Hours;
+            int count = int.Parse(Console.ReadLine());
+            int pay = int.Parse(Console.ReadLine());
+            double sum = ((hours / (24.0 / 6)) * count * pay) + ((hours / (24.0 / 10)) * count * pay * 0.7) +
+                ((hours / (24.0 / 8)) * count * pay * 0.4);
+            Console.WriteLine(sum);
         }
     }
 }
