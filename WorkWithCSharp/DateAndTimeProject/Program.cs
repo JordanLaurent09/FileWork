@@ -37,6 +37,24 @@ namespace DateAndTimeProject
             Console.WriteLine(DateTime.Now.DayOfYear);
             Console.WriteLine(DateTime.Now.Day);
             Console.WriteLine(DateTime.Now.Date);
+
+
+            // Различные методы по модификациям объектов класса DateTime
+            DateTime nowDay = DateTime.Now;
+            Console.WriteLine(nowDay.AddDays(3));
+            Console.WriteLine(nowDay.AddMonths(5));
+            Console.WriteLine(nowDay.AddYears(3));
+            Console.WriteLine(nowDay.AddHours(10));
+            Console.WriteLine(nowDay.AddMinutes(10));
+            Console.WriteLine(nowDay.AddSeconds(490));
+            Console.WriteLine(nowDay.Subtract(dateTime1));
+            Console.WriteLine(nowDay.AddDays(-7));
+            Console.WriteLine(nowDay.ToLocalTime());
+            Console.WriteLine(nowDay.ToUniversalTime());
+            Console.WriteLine(nowDay.ToLongDateString());
+            Console.WriteLine(nowDay.ToShortDateString());
+            Console.WriteLine(nowDay.ToLongTimeString());
+            Console.WriteLine(nowDay.ToShortTimeString());
         }
     }
 }
