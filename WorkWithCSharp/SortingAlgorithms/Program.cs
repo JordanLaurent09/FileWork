@@ -51,6 +51,11 @@ namespace SortingAlgorithms
                     array = PancakeSort(array);
                     PrintArray(array);
                     break;
+                case 7:
+                    Console.WriteLine("Сортировка Шелла");
+                    array = ShellSort(array);
+                    PrintArray(array);
+                    break;
             }
         }
 
