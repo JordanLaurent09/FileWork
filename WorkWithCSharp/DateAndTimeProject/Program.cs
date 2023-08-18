@@ -29,6 +29,14 @@ namespace DateAndTimeProject
 
             Console.WriteLine(dateTime1);
             Console.WriteLine(dateTime2);
+
+            // Различные методы для отображения времени и дат
+            Console.WriteLine(DateTime.UtcNow);
+            Console.WriteLine(DateTime.Today);
+            Console.WriteLine(DateTime.Now.DayOfWeek);
+            Console.WriteLine(DateTime.Now.DayOfYear);
+            Console.WriteLine(DateTime.Now.Day);
+            Console.WriteLine(DateTime.Now.Date);
         }
     }
 }
