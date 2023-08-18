@@ -10,6 +10,10 @@ namespace DateAndTimeProject
     {
         static void Main(string[] args)
         {
+
+            // Создание объекта типа "дата-время"
+            DateTime dateTime = new DateTime();
+            Console.WriteLine($"Значение по умолчанию: {dateTime}");
         }
     }
 }
