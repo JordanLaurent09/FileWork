@@ -18,6 +18,8 @@ namespace DateAndTimeProject
             Console.WriteLine($"Минимальное значение: {DateTime.MinValue}");
 
             Console.WriteLine($"Максимальное значение: {DateTime.MaxValue}");
+
+            Console.WriteLine($"Текущее время: {DateTime.Now}");
         }
     }
 }
