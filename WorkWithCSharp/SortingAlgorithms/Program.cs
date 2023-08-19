@@ -42,7 +42,7 @@ namespace SortingAlgorithms
                     PrintArray(array);
                     break;
                 case 5:
-                    Console.WriteLine("Сортировка по частям");
+                    Console.WriteLine("Сортировка по частям:");
                     array = StoogeSort(array, 0, array.Length - 1);
                     PrintArray(array);
                     break;
@@ -52,8 +52,13 @@ namespace SortingAlgorithms
                     PrintArray(array);
                     break;
                 case 7:
-                    Console.WriteLine("Сортировка Шелла");
+                    Console.WriteLine("Сортировка Шелла:");
                     array = ShellSort(array);
+                    PrintArray(array);
+                    break;
+                case 8:
+                    Console.WriteLine("Случайная сортировка:");
+                    array = BogoSort(array);
                     PrintArray(array);
                     break;
             }
@@ -243,6 +248,19 @@ namespace SortingAlgorithms
                     }
                 }
                 d = d / 2;
+            }
+            return array;
+        }
+
+
+        // Алгоритм случайной сортировки
+        // Bogo sorting algorithm
+
+        static int[] BogoSort(int[] array)
+        {
+            while(!IsSorted(array))
+            {
+                array = RandomPermulation(array);
             }
             return array;
         }
