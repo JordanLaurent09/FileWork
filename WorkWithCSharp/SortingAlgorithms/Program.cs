@@ -305,5 +305,18 @@ namespace SortingAlgorithms
             }
             return result;
         }
+
+
+        // Вспомогательная функция на проверку упорядоченности элементов (специально для СЛУЧАЙНОЙ сортировки)
+        // Adding function to understand whether array is sorted or not (especially for BOGO sorting algorithm)
+
+        static bool IsSorted(int[] array)
+        {
+            for (int i = 0; i <array.Length; i++)
+            {
+                if (array[i] > array[i + 1]) return false;
+            }
+            return true;
+        }
     }
 }
