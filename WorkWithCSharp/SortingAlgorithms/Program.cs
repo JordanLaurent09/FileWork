@@ -318,5 +318,23 @@ namespace SortingAlgorithms
             }
             return true;
         }
+
+        // Вспомогательная функция для перемешивания элементов (специально для СЛУЧАЙНОЙ сортировки)
+        // Adding function for random permulation of array's elements (especially for BOGO sorting algorithm)
+
+        static int[] RandomPermulation(int[] array)
+        {
+            Random random = new Random();
+            int n = array.Length;
+            while(n > 1)
+            {
+                n--;
+                int i = random.Next(n + 1);
+                int temp = array[i];
+                array[i] = array[n];
+                array[n] = temp;
+            }
+            return array;
+        }
     }
 }
