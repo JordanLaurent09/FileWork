@@ -122,6 +122,11 @@ namespace DateAndTimeProject
             Console.WriteLine(nowDay.ToString("Y"));
 
 
+            DateTime now = DateTime.Now;
+            Console.WriteLine(now.ToString("hh:mm:ss"));
+            Console.WriteLine(now.ToString("dd.MM.yyyy"));
+            Console.WriteLine(now.ToString("dd.MM.yyyy HH:mm:ss"));
+
             // Небольшой код по расчету количества лет между двумя датами
 
             DateTime d1 = new DateTime(2015, 6, 18);
