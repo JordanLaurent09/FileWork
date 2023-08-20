@@ -61,6 +61,11 @@ namespace SortingAlgorithms
                     array = BogoSort(array);
                     PrintArray(array);
                     break;
+                case 9:
+                    Console.WriteLine("Сортировка слиянием:");
+                    array = MergeSortArray(array);
+                    PrintArray(array);
+                    break;
             }
         }
 
