@@ -51,6 +51,12 @@ namespace EnumerationProject
         }
         static void Main(string[] args)
         {
+            // Каждое перечисление фактически определяет новый тип данных
+
+            Operation op;
+            op = Operation.Add;
+
+            Console.WriteLine(op);
         }
     }
 }

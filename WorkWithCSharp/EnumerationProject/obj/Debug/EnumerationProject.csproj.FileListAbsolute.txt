@@ -1,0 +1,7 @@
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\EnumerationProject\bin\Debug\EnumerationProject.exe.config
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\EnumerationProject\bin\Debug\EnumerationProject.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\EnumerationProject\bin\Debug\EnumerationProject.pdb
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\EnumerationProject\obj\Debug\EnumerationProject.csproj.AssemblyReference.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\EnumerationProject\obj\Debug\EnumerationProject.csproj.CoreCompileInputs.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\EnumerationProject\obj\Debug\EnumerationProject.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\EnumerationProject\obj\Debug\EnumerationProject.pdb
