@@ -57,6 +57,9 @@ namespace EnumerationProject
             op = Operation.Add;
 
             Console.WriteLine(op);
+
+            op = Operation.Multiply;
+            Console.WriteLine((int)op);
         }
     }
 }
