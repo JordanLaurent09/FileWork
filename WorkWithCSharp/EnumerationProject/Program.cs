@@ -20,7 +20,15 @@ namespace EnumerationProject
             Sunday
         }
 
+        // Второй способ задания перечисления
 
+        enum Time : byte
+        {
+            Morning,
+            Afternoon,
+            Evening,
+            Night
+        }
         static void Main(string[] args)
         {
         }
