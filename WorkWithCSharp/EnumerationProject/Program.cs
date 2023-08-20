@@ -29,6 +29,26 @@ namespace EnumerationProject
             Evening,
             Night
         }
+
+        // Можно оформить инициализацию перечисления
+
+        enum Operation
+        {
+            Add = 1, // теперь каждый следующий элемент по умолчанию увеличивается на единицу
+            Substract,
+            Multiply,
+            Divide
+        }
+
+        // Еще один способ инициализации перечисления
+
+        enum Operations
+        {
+            Add = 2,
+            Sunstract = 4,
+            Multiply = 8,
+            Divide = 16
+        }
         static void Main(string[] args)
         {
         }
