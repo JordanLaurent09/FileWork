@@ -393,5 +393,20 @@ namespace SortingAlgorithms
                 array[lowIndex + i] = tempArray[i];
             }
         }
+
+        // Еще одна вспомогательная функция для сортировки слиянием
+        // Another one adding function for merge sorting algorithm
+
+        static int[] MergeSort(int[] array, int lowIndex, int highIndex)
+        {
+            if (lowIndex < highIndex)
+            {
+                int middleIndex = (lowIndex + highIndex) / 2;
+                MergeSort(array, lowIndex, middleIndex);
+                MergeSort(array, middleIndex + 1, highIndex);
+                Merge(array, lowIndex, middleIndex, highIndex);
+            }
+            return array;
+        }
     }
 }
