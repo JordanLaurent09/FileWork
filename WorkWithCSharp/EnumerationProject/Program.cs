@@ -8,6 +8,19 @@ namespace EnumerationProject
 {
     class Program
     {
+        // Первый способ задания перечисления
+        enum Days
+        {
+            Monday,
+            Thuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday
+        }
+
+
         static void Main(string[] args)
         {
         }
