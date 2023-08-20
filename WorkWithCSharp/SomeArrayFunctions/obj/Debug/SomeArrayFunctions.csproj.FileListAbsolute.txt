@@ -1,7 +1,0 @@
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SomeArrayFunctions\bin\Debug\SomeArrayFunctions.exe.config
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SomeArrayFunctions\bin\Debug\SomeArrayFunctions.exe
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SomeArrayFunctions\bin\Debug\SomeArrayFunctions.pdb
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SomeArrayFunctions\obj\Debug\SomeArrayFunctions.csproj.AssemblyReference.cache
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SomeArrayFunctions\obj\Debug\SomeArrayFunctions.csproj.CoreCompileInputs.cache
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SomeArrayFunctions\obj\Debug\SomeArrayFunctions.exe
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SomeArrayFunctions\obj\Debug\SomeArrayFunctions.pdb

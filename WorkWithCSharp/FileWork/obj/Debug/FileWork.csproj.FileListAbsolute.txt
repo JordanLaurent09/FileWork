@@ -1,7 +1,0 @@
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileWork\bin\Debug\FileWork.exe.config
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileWork\bin\Debug\FileWork.exe
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileWork\bin\Debug\FileWork.pdb
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileWork\obj\Debug\FileWork.csproj.AssemblyReference.cache
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileWork\obj\Debug\FileWork.csproj.CoreCompileInputs.cache
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileWork\obj\Debug\FileWork.exe
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileWork\obj\Debug\FileWork.pdb

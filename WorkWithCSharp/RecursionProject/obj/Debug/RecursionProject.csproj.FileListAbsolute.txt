@@ -1,7 +1,0 @@
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\RecursionProject\bin\Debug\RecursionProject.exe.config
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\RecursionProject\bin\Debug\RecursionProject.exe
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\RecursionProject\bin\Debug\RecursionProject.pdb
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\RecursionProject\obj\Debug\RecursionProject.csproj.CoreCompileInputs.cache
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\RecursionProject\obj\Debug\RecursionProject.exe
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\RecursionProject\obj\Debug\RecursionProject.pdb
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\RecursionProject\obj\Debug\RecursionProject.csproj.AssemblyReference.cache

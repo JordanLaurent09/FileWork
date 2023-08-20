@@ -1,7 +1,0 @@
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DateAndTimeProject\bin\Debug\DateAndTimeProject.exe.config
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DateAndTimeProject\bin\Debug\DateAndTimeProject.exe
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DateAndTimeProject\bin\Debug\DateAndTimeProject.pdb
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DateAndTimeProject\obj\Debug\DateAndTimeProject.csproj.AssemblyReference.cache
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DateAndTimeProject\obj\Debug\DateAndTimeProject.csproj.CoreCompileInputs.cache
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DateAndTimeProject\obj\Debug\DateAndTimeProject.exe
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DateAndTimeProject\obj\Debug\DateAndTimeProject.pdb

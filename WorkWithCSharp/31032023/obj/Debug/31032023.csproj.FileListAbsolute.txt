@@ -1,7 +1,0 @@
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\31032023\bin\Debug\31032023.exe.config
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\31032023\bin\Debug\31032023.exe
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\31032023\bin\Debug\31032023.pdb
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\31032023\obj\Debug\31032023.csproj.AssemblyReference.cache
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\31032023\obj\Debug\31032023.csproj.CoreCompileInputs.cache
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\31032023\obj\Debug\31032023.exe
-C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\31032023\obj\Debug\31032023.pdb
