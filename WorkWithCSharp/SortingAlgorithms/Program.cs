@@ -265,6 +265,16 @@ namespace SortingAlgorithms
             return array;
         }
 
+
+        // Алгоритм сортировки слиянием
+        // Merge sorting algorithm
+
+        static int[] MergeSortArray(int[] array)
+        {
+            return MergeSort(array, 0, array.Length - 1);
+        }
+
+
         // Вспомогательная функция по созданию случайного массива
         // Adding function using for fast creation of user array
         static int[] CreateArray(int arraySize, int lowestElementValue, int highestElementValue)
