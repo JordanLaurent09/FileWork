@@ -423,5 +423,25 @@ namespace SortingAlgorithms
             }
             return array;
         }
+
+
+        // Вспомогательная функция для быстрой сортировки (сортировки Хоара)
+        // Adding partition function for QUICK sorting algorithm
+
+        static int Partition(int[] array, int minIndex, int maxIndex)
+        {
+            int pivot = minIndex - 1;
+            for(int i = minIndex; i < maxIndex; i++)
+            {
+                if(array[i] < array[maxIndex])
+                {
+                    pivot++;
+                    Swap(ref array[pivot], ref array[i]);
+                }
+            }
+            pivot++;
+            Swap(ref array[pivot], ref array[maxIndex]);
+            return pivot;
+        }
     }
 }
