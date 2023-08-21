@@ -60,6 +60,19 @@ namespace EnumerationProject
             Age,
             Sex
         }
+
+        // Перечисление типа Apple
+
+        enum Apple
+        {
+            Jonathan,
+            GoldenDel,
+            RedDel,
+            Winsap,
+            Cortland,
+            McIntosh
+        }
+
         static void Main(string[] args)
         {
             // Каждое перечисление фактически определяет новый тип данных
