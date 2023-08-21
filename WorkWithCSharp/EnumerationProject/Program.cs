@@ -77,6 +77,15 @@ namespace EnumerationProject
 
             MathOperations(10, 5, Operation.Add);
             MathOperations(11, 5, Operation.Multiply);
+
+
+            // Работа с перечислением UI
+
+            UI userOne;
+            for(userOne = UI.Name; userOne <= UI.Sex; userOne++)
+            {
+                Console.WriteLine("Элемент: \"{0}\", значение {1}", userOne, (int)userOne);
+            }
         }
 
 
