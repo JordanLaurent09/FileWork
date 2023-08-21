@@ -1,0 +1,7 @@
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SortingAlgorithms\bin\Debug\SortingAlgorithms.exe.config
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SortingAlgorithms\bin\Debug\SortingAlgorithms.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SortingAlgorithms\bin\Debug\SortingAlgorithms.pdb
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SortingAlgorithms\obj\Debug\SortingAlgorithms.csproj.AssemblyReference.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SortingAlgorithms\obj\Debug\SortingAlgorithms.csproj.CoreCompileInputs.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SortingAlgorithms\obj\Debug\SortingAlgorithms.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\SortingAlgorithms\obj\Debug\SortingAlgorithms.pdb
