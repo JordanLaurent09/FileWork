@@ -60,6 +60,12 @@ namespace EnumerationProject
 
             op = Operation.Multiply;
             Console.WriteLine((int)op);
+
+
+            // Проверка функции MathOperations
+
+            MathOperations(10, 5, Operation.Add);
+            MathOperations(11, 5, Operation.Multiply);
         }
 
 
