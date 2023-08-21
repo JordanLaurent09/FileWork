@@ -61,5 +61,32 @@ namespace EnumerationProject
             op = Operation.Multiply;
             Console.WriteLine((int)op);
         }
+
+
+        // Функция с основными математическими операциями на основе перечислений
+        
+        static void MathOperations(double x, double y, Operation operation)
+        {
+            double result = 0;
+
+            switch(operation)
+            {
+                case Operation.Add:
+                    result = x + y;
+                    break;
+                case Operation.Substract:
+                    result = x - y;
+                    break;
+                case Operation.Multiply:
+                    result = x * y;
+                    break;
+                case Operation.Divide:
+                    if (y == 0) result = 0;
+                    else result = x / y;
+                    break;
+            }
+            Console.WriteLine("Результат операции равен {0}", result);
+        }
+
     }
 }
