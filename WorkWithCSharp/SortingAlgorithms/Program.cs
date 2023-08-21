@@ -66,6 +66,11 @@ namespace SortingAlgorithms
                     array = MergeSortArray(array);
                     PrintArray(array);
                     break;
+                case 10:
+                    Console.WriteLine("Быстрая сортировка (Сортировка Хоара)");
+                    array = QuickSortAlg(array);
+                    PrintArray(array);
+                    break;
             }
         }
 
