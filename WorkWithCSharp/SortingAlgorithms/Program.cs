@@ -280,6 +280,15 @@ namespace SortingAlgorithms
         }
 
 
+        // Алгоритм быстрой сортировки (Сортировка Хоара)
+        // Quick sorting algorithm
+
+        static int[] QuickSortAlg(int[] array)
+        {
+            return QuickSort(array, 0, array.Length - 1);
+        }
+
+
         // Вспомогательная функция по созданию случайного массива
         // Adding function using for fast creation of user array
         static int[] CreateArray(int arraySize, int lowestElementValue, int highestElementValue)
@@ -447,7 +456,7 @@ namespace SortingAlgorithms
         // Вспомогательная функция для быстрой сортировки
         // Adding function for QUICK sorting algorithm
 
-        int[] QuickSort(int[]array, int minIndex, int maxIndex)
+        static int[] QuickSort(int[]array, int minIndex, int maxIndex)
         {
             if(minIndex >= maxIndex)
             {
