@@ -49,6 +49,17 @@ namespace EnumerationProject
             Multiply = 8,
             Divide = 16
         }
+
+        // Перечисление типа UI
+
+        enum UI : long
+        {
+            Name,
+            Surname,
+            ShortName,
+            Age,
+            Sex
+        }
         static void Main(string[] args)
         {
             // Каждое перечисление фактически определяет новый тип данных
