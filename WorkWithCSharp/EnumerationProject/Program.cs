@@ -99,6 +99,22 @@ namespace EnumerationProject
             {
                 Console.WriteLine("Элемент: \"{0}\", значение {1}", userOne, (int)userOne);
             }
+
+            // Работа с перечислением Apple
+
+            string[] color = {"красный", "желтый", "красный", "красный", "красный", "красно-зеленый"};
+
+            Apple i;
+            for (i = Apple.Jonathan; i <= Apple.McIntosh; i++)
+            {
+                Console.WriteLine(i + " имеет значение " + (int)i);
+            }
+            Console.WriteLine();
+
+            for (i = Apple.Jonathan; i <= Apple.McIntosh; i++)
+            {
+                Console.WriteLine("Цвет сорта " + i + " - " + color[(int)i]);
+            }
         }
 
 
