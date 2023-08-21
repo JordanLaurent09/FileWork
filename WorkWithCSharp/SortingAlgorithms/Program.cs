@@ -443,5 +443,20 @@ namespace SortingAlgorithms
             Swap(ref array[pivot], ref array[maxIndex]);
             return pivot;
         }
+
+        // Вспомогательная функция для быстрой сортировки
+        // Adding function for QUICK sorting algorithm
+
+        int[] QuickSort(int[]array, int minIndex, int maxIndex)
+        {
+            if(minIndex >= maxIndex)
+            {
+                return array;
+            }
+            int pivot = Partition(array, minIndex, maxIndex);
+            QuickSort(array, minIndex, pivot - 1);
+            QuickSort(array, pivot + 1, maxIndex);
+            return array;
+        }
     }
 }
