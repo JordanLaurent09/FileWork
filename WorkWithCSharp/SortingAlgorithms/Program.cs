@@ -290,9 +290,6 @@ namespace SortingAlgorithms
         }
 
 
-        // Вспомогательная функция для сортировки слиянием
-        // Adding function for merge sorting algorithm
-
         static void Merge(int[] array, int lowIndex, int middleIndex, int highIndex)
         {
             int left = lowIndex;
@@ -329,8 +326,6 @@ namespace SortingAlgorithms
             }
         }
 
-        // Еще одна вспомогательная функция для сортировки слиянием
-        // Another one adding function for merge sorting algorithm
 
         static int[] MergeSort(int[] array, int lowIndex, int highIndex)
         {
