@@ -16,7 +16,7 @@ namespace SortingAlgorithms
             Console.WriteLine("Исходный неотсортированный массив:");
             PrintArray(array);
             Console.WriteLine();
-            Console.WriteLine("Чтобы выбрать способ сортировки, введите цифру от 1 до 10");
+            Console.WriteLine("Чтобы выбрать способ сортировки, введите цифру от 1 до 11");
             int choice = int.Parse(Console.ReadLine());
 
             switch (choice)
