@@ -245,8 +245,6 @@ namespace SortingAlgorithms
         }
 
 
-        // Adding flip function
-
         static void Flip(int[] array, int end)
         {
             for (var start = 0; start < end; start++, end--)
@@ -257,7 +255,6 @@ namespace SortingAlgorithms
             }
         }
 
-        // Adding function for finding index of max element
 
         static int IndexOfMax(int[] array, int n)
         {
