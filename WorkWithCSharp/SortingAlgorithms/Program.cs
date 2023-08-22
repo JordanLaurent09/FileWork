@@ -281,8 +281,6 @@ namespace SortingAlgorithms
         }
 
 
-        // Вспомогательная функция на проверку упорядоченности элементов (специально для СЛУЧАЙНОЙ сортировки)
-        // Adding function to understand whether array is sorted or not (especially for BOGO sorting algorithm)
 
         static bool IsSorted(int[] array)
         {
@@ -293,8 +291,6 @@ namespace SortingAlgorithms
             return true;
         }
 
-        // Вспомогательная функция для перемешивания элементов (специально для СЛУЧАЙНОЙ сортировки)
-        // Adding function for random permulation of array's elements (especially for BOGO sorting algorithm)
 
         static int[] RandomPermulation(int[] array)
         {
