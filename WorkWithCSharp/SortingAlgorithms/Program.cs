@@ -294,6 +294,34 @@ namespace SortingAlgorithms
         }
 
 
+        // Алгоритм "гномьей" сортировки
+        // Gnome sorting algorithm
+
+        static int[] GnomeSort(int[] array)
+        {
+            int index = 1;
+            int nextIndex = index + 1;
+            while(index < array.Length)
+            {
+                if(array[index - 1] < array[index])
+                {
+                    nextIndex++;
+                }
+                else
+                {
+                    Swap(ref array[index - 1], ref array[index]);
+                    index--;
+                    if(index == 0)
+                    {
+                        index = nextIndex;
+                        nextIndex++;
+                    }
+                }
+            }
+            return array;
+        }
+
+
         // Вспомогательная функция по созданию случайного массива
         // Adding function using for fast creation of user array
         static int[] CreateArray(int arraySize, int lowestElementValue, int highestElementValue)
