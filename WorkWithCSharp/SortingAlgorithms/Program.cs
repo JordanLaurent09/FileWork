@@ -298,8 +298,18 @@ namespace SortingAlgorithms
             return QuickSort(array, 0, array.Length - 1);
         }
 
-        // Вспомогательная функция для быстрой сортировки (сортировки Хоара)
-        // Adding partition function for QUICK sorting algorithm
+
+        static int[] QuickSort(int[] array, int minIndex, int maxIndex)
+        {
+            if (minIndex >= maxIndex)
+            {
+                return array;
+            }
+            int pivot = Partition(array, minIndex, maxIndex);
+            QuickSort(array, minIndex, pivot - 1);
+            QuickSort(array, pivot + 1, maxIndex);
+            return array;
+        }
 
         static int Partition(int[] array, int minIndex, int maxIndex)
         {
@@ -317,20 +327,9 @@ namespace SortingAlgorithms
             return pivot;
         }
 
-        // Вспомогательная функция для быстрой сортировки
-        // Adding function for QUICK sorting algorithm
+        
 
-        static int[] QuickSort(int[] array, int minIndex, int maxIndex)
-        {
-            if (minIndex >= maxIndex)
-            {
-                return array;
-            }
-            int pivot = Partition(array, minIndex, maxIndex);
-            QuickSort(array, minIndex, pivot - 1);
-            QuickSort(array, pivot + 1, maxIndex);
-            return array;
-        }
+
         // Алгоритм "гномьей" сортировки
         // Gnome sorting algorithm
 
