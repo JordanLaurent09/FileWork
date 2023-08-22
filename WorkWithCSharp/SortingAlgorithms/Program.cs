@@ -499,37 +499,6 @@ namespace SortingAlgorithms
                 if (array[i] > array[result]) result = i;
             }
             return result;
-        }
-
-
-        //// Вспомогательная функция на проверку упорядоченности элементов (специально для СЛУЧАЙНОЙ сортировки)
-        //// Adding function to understand whether array is sorted or not (especially for BOGO sorting algorithm)
-
-        //static bool IsSorted(int[] array)
-        //{
-        //    for (int i = 0; i <array.Length; i++)
-        //    {
-        //        if (array[i] > array[i + 1]) return false;
-        //    }
-        //    return true;
-        //}
-
-        //// Вспомогательная функция для перемешивания элементов (специально для СЛУЧАЙНОЙ сортировки)
-        //// Adding function for random permulation of array's elements (especially for BOGO sorting algorithm)
-
-        //static int[] RandomPermulation(int[] array)
-        //{
-        //    Random random = new Random();
-        //    int n = array.Length;
-        //    while(n > 1)
-        //    {
-        //        n--;
-        //        int i = random.Next(n + 1);
-        //        int temp = array[i];
-        //        array[i] = array[n];
-        //        array[n] = temp;
-        //    }
-        //    return array;
-        //}        
+        }   
     }
 }
