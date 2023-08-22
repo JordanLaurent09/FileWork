@@ -71,6 +71,11 @@ namespace SortingAlgorithms
                     array = QuickSortAlg(array);
                     PrintArray(array);
                     break;
+                case 11:
+                    Console.WriteLine("Гномья сортировка");
+                    array = GnomeSort(array);
+                    PrintArray(array);
+                    break;
             }
         }
 
