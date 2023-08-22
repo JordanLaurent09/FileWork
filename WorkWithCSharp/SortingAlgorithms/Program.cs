@@ -310,6 +310,7 @@ namespace SortingAlgorithms
             {
                 if(array[index - 1] < array[index])
                 {
+                    index = nextIndex;
                     nextIndex++;
                 }
                 else
