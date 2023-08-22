@@ -290,6 +290,62 @@ namespace SortingAlgorithms
         }
 
 
+        // Вспомогательная функция для сортировки слиянием
+        // Adding function for merge sorting algorithm
+
+        static void Merge(int[] array, int lowIndex, int middleIndex, int highIndex)
+        {
+            int left = lowIndex;
+            int right = middleIndex + 1;
+            int[] tempArray = new int[highIndex - lowIndex + 1];
+            int index = 0;
+            while ((left <= middleIndex) && (right <= highIndex))
+            {
+                if (array[left] <= array[right])
+                {
+                    tempArray[index] = array[left];
+                    left++;
+                }
+                else
+                {
+                    tempArray[index] = array[right];
+                    right++;
+                }
+                index++;
+            }
+            for (int i = left; i <= middleIndex; i++)
+            {
+                tempArray[index] = array[i];
+                index++;
+            }
+            for (int i = right; i <= highIndex; i++)
+            {
+                tempArray[index] = array[i];
+                index++;
+            }
+            for (int i = 0; i < tempArray.Length; i++)
+            {
+                array[lowIndex + i] = tempArray[i];
+            }
+        }
+
+        // Еще одна вспомогательная функция для сортировки слиянием
+        // Another one adding function for merge sorting algorithm
+
+        static int[] MergeSort(int[] array, int lowIndex, int highIndex)
+        {
+            if (lowIndex < highIndex)
+            {
+                int middleIndex = (lowIndex + highIndex) / 2;
+                MergeSort(array, lowIndex, middleIndex);
+                MergeSort(array, middleIndex + 1, highIndex);
+                Merge(array, lowIndex, middleIndex, highIndex);
+            }
+            return array;
+        }
+
+
+
         // Алгоритм быстрой сортировки (Сортировка Хоара)
         // Quick sorting algorithm
 
@@ -449,58 +505,58 @@ namespace SortingAlgorithms
             return array;
         }
 
-        // Вспомогательная функция для сортировки слиянием
-        // Adding function for merge sorting algorithm
+        //// Вспомогательная функция для сортировки слиянием
+        //// Adding function for merge sorting algorithm
 
-        static void Merge(int[] array, int lowIndex, int middleIndex, int highIndex)
-        {
-            int left = lowIndex;
-            int right = middleIndex + 1;
-            int[] tempArray = new int[highIndex - lowIndex + 1];
-            int index = 0;
-            while((left <= middleIndex) && (right <= highIndex))
-            {
-                if(array[left] <= array[right])
-                {
-                    tempArray[index] = array[left];
-                    left++;
-                }
-                else
-                {
-                    tempArray[index] = array[right];
-                    right++;
-                }
-                index++;
-            }
-            for(int i = left; i <= middleIndex; i++)
-            {
-                tempArray[index] = array[i];
-                index++;
-            }
-            for(int i = right; i <= highIndex; i++)
-            {
-                tempArray[index] = array[i];
-                index++;
-            }
-            for(int i = 0; i < tempArray.Length; i++)
-            {
-                array[lowIndex + i] = tempArray[i];
-            }
-        }
+        //static void Merge(int[] array, int lowIndex, int middleIndex, int highIndex)
+        //{
+        //    int left = lowIndex;
+        //    int right = middleIndex + 1;
+        //    int[] tempArray = new int[highIndex - lowIndex + 1];
+        //    int index = 0;
+        //    while((left <= middleIndex) && (right <= highIndex))
+        //    {
+        //        if(array[left] <= array[right])
+        //        {
+        //            tempArray[index] = array[left];
+        //            left++;
+        //        }
+        //        else
+        //        {
+        //            tempArray[index] = array[right];
+        //            right++;
+        //        }
+        //        index++;
+        //    }
+        //    for(int i = left; i <= middleIndex; i++)
+        //    {
+        //        tempArray[index] = array[i];
+        //        index++;
+        //    }
+        //    for(int i = right; i <= highIndex; i++)
+        //    {
+        //        tempArray[index] = array[i];
+        //        index++;
+        //    }
+        //    for(int i = 0; i < tempArray.Length; i++)
+        //    {
+        //        array[lowIndex + i] = tempArray[i];
+        //    }
+        //}
 
-        // Еще одна вспомогательная функция для сортировки слиянием
-        // Another one adding function for merge sorting algorithm
+        //// Еще одна вспомогательная функция для сортировки слиянием
+        //// Another one adding function for merge sorting algorithm
 
-        static int[] MergeSort(int[] array, int lowIndex, int highIndex)
-        {
-            if (lowIndex < highIndex)
-            {
-                int middleIndex = (lowIndex + highIndex) / 2;
-                MergeSort(array, lowIndex, middleIndex);
-                MergeSort(array, middleIndex + 1, highIndex);
-                Merge(array, lowIndex, middleIndex, highIndex);
-            }
-            return array;
-        }
+        //static int[] MergeSort(int[] array, int lowIndex, int highIndex)
+        //{
+        //    if (lowIndex < highIndex)
+        //    {
+        //        int middleIndex = (lowIndex + highIndex) / 2;
+        //        MergeSort(array, lowIndex, middleIndex);
+        //        MergeSort(array, middleIndex + 1, highIndex);
+        //        Merge(array, lowIndex, middleIndex, highIndex);
+        //    }
+        //    return array;
+        //}
     }
 }
