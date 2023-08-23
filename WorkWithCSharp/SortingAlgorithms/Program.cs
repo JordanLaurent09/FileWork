@@ -462,6 +462,14 @@ namespace SortingAlgorithms
         }
 
 
+
+        static int GenNextStep(int s)
+        {
+            s += 1000 / 1247;
+            return s > 1 ? s : 1;
+        }
+
+
         // Вспомогательная функция по созданию случайного массива
         // Adding function using for fast creation of user array
         static int[] CreateArray(int arraySize, int lowestElementValue, int highestElementValue)
