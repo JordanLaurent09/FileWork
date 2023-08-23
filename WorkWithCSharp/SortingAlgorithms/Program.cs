@@ -462,6 +462,40 @@ namespace SortingAlgorithms
         }
 
 
+        // Алгоритм сортировки расческой
+
+        static int[] CompSort(int[] array)
+        {
+            int arrayLength = array.Length;
+            int currentStep = arrayLength - 1;
+            while(currentStep > 1)
+            {
+                for(int i = 0; i + currentStep < array.Length; i++)
+                {
+                    if(array[i] > array[i + currentStep])
+                    {
+                        Swap(ref array[i], ref array[i + currentStep]);
+                    }
+                }
+                currentStep = GenNextStep(currentStep);
+            }
+
+            for(int i = 1; i < arrayLength; i++)
+            {
+                bool swapFlag = false;
+                for(int j = 0; j< arrayLength - i; i++)
+                {
+                    if(array[j] > array[j + 1])
+                    {
+                        Swap(ref array[j], ref array[j + 1]);
+                        swapFlag = true;
+                    }
+                }
+                if (!swapFlag) break;
+            }
+            return array;
+        }
+
 
         static int GenNextStep(int s)
         {
