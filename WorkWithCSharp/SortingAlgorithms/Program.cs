@@ -76,6 +76,11 @@ namespace SortingAlgorithms
                     array = GnomeSort(array);
                     PrintArray(array);
                     break;
+                case 12:
+                    Console.WriteLine("Сортировка расческой");
+                    array = CompSort(array);
+                    PrintArray(array);
+                    break;
             }
         }
 
