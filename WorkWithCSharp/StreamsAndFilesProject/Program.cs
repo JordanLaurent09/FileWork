@@ -9,7 +9,7 @@ namespace StreamsAndFilesProject
 {
     class Program
     {
-        static void Main(string[] args)
+        static async void Main(string[] args)
         {
             // Синхронные потоки
             // Чтение из файла 1 способ
@@ -41,6 +41,19 @@ namespace StreamsAndFilesProject
             {
                 byte[] buffer = Encoding.Default.GetBytes(writing);
                 fs.Write(buffer, 0, buffer.Length);
+            }
+
+
+            // Асинхронные потоки
+
+            // Запись в файл
+            Console.WriteLine("Enter the text:");
+            string line = Console.ReadLine();
+
+            using(FileStream fileStream = new FileStream("AsyncFile.txt", FileMode.OpenOrCreate))
+            {
+                byte[] buffer = Encoding.Default.GetBytes(line);
+                await fileStream.WriteAsync(buffer, 0, buffer.Length);
             }
 
         }
