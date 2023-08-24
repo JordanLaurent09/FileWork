@@ -34,9 +34,18 @@ namespace StreamsAndFilesProject
                 stream.Close();
             }
 
+            // Запись в файл
+            Console.WriteLine("Enter the text:");
+            string writing = Console.ReadLine();
+            using(FileStream fs = new FileStream("WriteFile.txt", FileMode.Append, FileAccess.Write))
+            {
+                byte[] buffer = Encoding.Default.GetBytes(writing);
+                fs.Write(buffer, 0, buffer.Length);
+            }
+
         }
 
-        // Чтение из файла 2 способ (отдельная функция)
+        // Чтение из файла 2 способ (отдельная функция, синхронный поток)
         static void ReadFile()
         {
             using(FileStream fs = new FileStream("File.txt", FileMode.Open))
