@@ -56,6 +56,15 @@ namespace StreamsAndFilesProject
                 await fileStream.WriteAsync(buffer, 0, buffer.Length);
             }
 
+            // Чтение из файла
+            using(FileStream fstream = new FileStream("AsyncFile.txt", FileMode.Open))
+            {
+                byte[] buffer = new byte[fstream.Length];
+                await fstream.ReadAsync(buffer, 0, buffer.Length);
+                string readText = Encoding.Default.GetString(buffer);
+                Console.WriteLine(readText);
+            }
+
         }
 
         // Чтение из файла 2 способ (отдельная функция, синхронный поток)
