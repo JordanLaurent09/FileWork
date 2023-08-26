@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeekPositionProject", "Seek
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamsWork", "StreamsWork\StreamsWork.csproj", "{070A440E-D59F-4D1F-B703-C5CC5D896956}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatFiles", "DatFiles\DatFiles.csproj", "{A7C322DE-D613-4136-B4EE-BAE2F96FEEC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{070A440E-D59F-4D1F-B703-C5CC5D896956}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{070A440E-D59F-4D1F-B703-C5CC5D896956}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{070A440E-D59F-4D1F-B703-C5CC5D896956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7C322DE-D613-4136-B4EE-BAE2F96FEEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C322DE-D613-4136-B4EE-BAE2F96FEEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C322DE-D613-4136-B4EE-BAE2F96FEEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C322DE-D613-4136-B4EE-BAE2F96FEEC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

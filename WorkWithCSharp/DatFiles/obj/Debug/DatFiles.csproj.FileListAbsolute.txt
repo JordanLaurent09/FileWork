@@ -1,0 +1,7 @@
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DatFiles\bin\Debug\DatFiles.exe.config
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DatFiles\bin\Debug\DatFiles.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DatFiles\bin\Debug\DatFiles.pdb
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DatFiles\obj\Debug\DatFiles.csproj.AssemblyReference.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DatFiles\obj\Debug\DatFiles.csproj.CoreCompileInputs.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DatFiles\obj\Debug\DatFiles.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\DatFiles\obj\Debug\DatFiles.pdb
