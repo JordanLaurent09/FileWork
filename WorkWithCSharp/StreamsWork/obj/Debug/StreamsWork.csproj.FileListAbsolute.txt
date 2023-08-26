@@ -1,0 +1,7 @@
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StreamsWork\bin\Debug\StreamsWork.exe.config
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StreamsWork\bin\Debug\StreamsWork.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StreamsWork\bin\Debug\StreamsWork.pdb
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StreamsWork\obj\Debug\StreamsWork.csproj.AssemblyReference.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StreamsWork\obj\Debug\StreamsWork.csproj.CoreCompileInputs.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StreamsWork\obj\Debug\StreamsWork.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\StreamsWork\obj\Debug\StreamsWork.pdb

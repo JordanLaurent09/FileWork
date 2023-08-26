@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamsAndFilesProject", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeekPositionProject", "SeekPositionProject\SeekPositionProject.csproj", "{ADD8B37B-1892-4D92-8194-117442B0F5DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamsWork", "StreamsWork\StreamsWork.csproj", "{070A440E-D59F-4D1F-B703-C5CC5D896956}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{ADD8B37B-1892-4D92-8194-117442B0F5DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADD8B37B-1892-4D92-8194-117442B0F5DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADD8B37B-1892-4D92-8194-117442B0F5DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{070A440E-D59F-4D1F-B703-C5CC5D896956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{070A440E-D59F-4D1F-B703-C5CC5D896956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{070A440E-D59F-4D1F-B703-C5CC5D896956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{070A440E-D59F-4D1F-B703-C5CC5D896956}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
