@@ -11,16 +11,16 @@ namespace StreamsWork
     {
         static void Main(string[] args)
         {
-            // 1 Чтение данных из файла и их обработка по заданному условию
+           // 1 Чтение данных из файла и их обработка по заданному условию
             Console.Write("Enter the text:");
             string text = Console.ReadLine();
-            using(StreamReader sr = new StreamReader("text.txt"))
+            using (StreamReader sr = new StreamReader("text.txt"))
             {
                 string line;
                 int count = 0;
-                while((line = sr.ReadLine())!= null)
+                while ((line = sr.ReadLine()) != null)
                 {
-                    if(line.StartsWith("T"))
+                    if (line.StartsWith("T"))
                     {
                         Console.WriteLine(line);
                     }
@@ -35,7 +35,31 @@ namespace StreamsWork
                     if (mas.Length == 6) count++;
                 }
                 Console.WriteLine(count);
+
+                // 2 Асинхронное считывание текста из файла
+                //string textTotal = await sr.ReadToEndAsync();
+                //Console.WriteLine(textTotal);
             }
+
+            // 3 Асинхронное считывание текста построччно
+            //string eachLine;
+            //using(StreamReader sr = new StreamReader("text.txt"))
+            //{
+            //    while((eachLine = await sr.ReadLineAsync())!=null)
+            //    {
+            //        Console.WriteLine(eachLine);
+            //    }
+            //}
+
+            // 4 Полная перезапись файла
+            Console.WriteLine("Enter the line");
+            string textLine = Console.ReadLine();
+            using(StreamWriter sw = new StreamWriter("text.txt", false))
+            {
+                sw.WriteLine(textLine);
+            }
+
+
         }
     }
 }
