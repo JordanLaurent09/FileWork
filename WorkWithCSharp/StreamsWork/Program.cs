@@ -59,7 +59,12 @@ namespace StreamsWork
                 sw.WriteLine(textLine);
             }
 
-
+            // 5 Добавление строки в файл
+            string add = Console.ReadLine();
+            using(StreamWriter sw = new StreamWriter("text.txt", true))
+            {
+                sw.WriteLine(add);
+            }
         }
     }
 }
