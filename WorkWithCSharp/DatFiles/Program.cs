@@ -62,6 +62,19 @@ namespace DatFiles
                 writer.Write(subTitle);
                 writer.Write(age);
             }
+
+            using(BinaryReader reader = new BinaryReader(File.Open("EgyptTravel.dat", FileMode.Open)))
+            {
+                while(reader.PeekChar() > -1)
+                {
+                    string title = reader.ReadString();
+                    string subTitle = reader.ReadString();
+                    int age = reader.ReadInt32();
+                    Console.WriteLine(title);
+                    Console.WriteLine(subTitle);
+                    Console.WriteLine(age);
+                }
+            }
         }
     }
 }
