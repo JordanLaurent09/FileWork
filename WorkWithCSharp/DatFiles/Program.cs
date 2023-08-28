@@ -52,6 +52,16 @@ namespace DatFiles
                     Console.WriteLine(value);
                 }
             }
+
+            using(BinaryWriter writer = new BinaryWriter(File.Open("EgyptTravel.dat", FileMode.OpenOrCreate)))
+            {
+                string title = "Egypt";
+                string subTitle = "Funny journey";
+                int age = 32;
+                writer.Write(title);
+                writer.Write(subTitle);
+                writer.Write(age);
+            }
         }
     }
 }
