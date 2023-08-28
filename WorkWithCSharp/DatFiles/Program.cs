@@ -29,6 +29,29 @@ namespace DatFiles
                     Console.WriteLine(digit);
                 }
             }
+
+            // Запись в файл произвольного вещественного массива
+            using (BinaryWriter writer = new BinaryWriter(File.Open("arrayFile.dat", FileMode.OpenOrCreate)))
+            {
+                Random random = new Random();
+                double[] array = new double[20];
+                for (int i = 0; i < 20; i++)
+                {
+                    double value = random.NextDouble();
+                    Console.WriteLine(value);
+                    writer.Write(value);
+                }
+            }
+
+            // Чтение из файла произвольного вещественного массива
+            using(BinaryReader reader = new BinaryReader(File.Open("arrayFile.dat", FileMode.Open)))
+            {
+                for (int i = 0; i < 20; i++)
+                {
+                    double value = reader.ReadDouble();
+                    Console.WriteLine(value);
+                }
+            }
         }
     }
 }
