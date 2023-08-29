@@ -1,0 +1,7 @@
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FilesDirectoriesPartTwoProject\bin\Debug\FilesDirectoriesPartTwoProject.exe.config
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FilesDirectoriesPartTwoProject\bin\Debug\FilesDirectoriesPartTwoProject.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FilesDirectoriesPartTwoProject\bin\Debug\FilesDirectoriesPartTwoProject.pdb
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FilesDirectoriesPartTwoProject\obj\Debug\FilesDirectoriesPartTwoProject.csproj.AssemblyReference.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FilesDirectoriesPartTwoProject\obj\Debug\FilesDirectoriesPartTwoProject.csproj.CoreCompileInputs.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FilesDirectoriesPartTwoProject\obj\Debug\FilesDirectoriesPartTwoProject.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FilesDirectoriesPartTwoProject\obj\Debug\FilesDirectoriesPartTwoProject.pdb

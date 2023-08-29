@@ -46,7 +46,6 @@ namespace FilesDirectoriesProject
             // Еще один способ перемещения файлов
             newInfo.Replace(destPath, resPath);
 
-
             // Удаление файла
             newInfo.Delete();
 
