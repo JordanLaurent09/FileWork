@@ -39,6 +39,23 @@ namespace FileManager
                             Console.WriteLine("Файл не существует");
                         }
                         break;
+                    case "copy":
+                        FileInfo fileSource = new FileInfo($@"{path}\{commands[1]}");
+                        if(fileSource.Exists)
+                        {
+                            fileSource.CopyTo($@"{path}\{commands[2]}", true);
+                        }
+                        break;
+                    case "move":
+                        FileInfo moveSource = new FileInfo($@"{path}\{commands[1]}");
+                        if(moveSource.Exists)
+                        {
+                            moveSource.MoveTo($@"{path}\{commands[2]}");
+                        }
+                        break;
+                    case "dir":
+                        DirectoryInfo dir = new DirectoryInfo(path);
+
                 }
             }
         }
