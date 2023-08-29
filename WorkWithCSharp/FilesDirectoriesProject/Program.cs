@@ -12,9 +12,14 @@ namespace FilesDirectoriesProject
         static void Main(string[] args)
         {
             // Файлы
+
+            // Данные 2 адреса означают, что файлы располагаются на одну папку выше папки debug, т.е. в папке bin
             string path = @"..\text.txt";
             string newPath = @"..\newtext.txt";
+
+            // Данные 3 адреса означают, что файл находится в папке debug (корневая папка проекта) 
             string movePath = @"text.txt";
+
             string destPath = @"dtext.txt";
             string resPath = @"rtext.txt";
 
@@ -31,6 +36,9 @@ namespace FilesDirectoriesProject
                 Console.WriteLine(newInfo.Attributes);
                 Console.WriteLine(newInfo.DirectoryName);
             }
+
+            // Копирование файла по новому пути 
+            fileInfo.CopyTo(newPath, true);
 
         }
     }
