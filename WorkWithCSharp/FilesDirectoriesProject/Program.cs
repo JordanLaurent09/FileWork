@@ -40,6 +40,16 @@ namespace FilesDirectoriesProject
             // Копирование файла по новому пути 
             fileInfo.CopyTo(newPath, true);
 
+            // Перемещение файла по новому пути
+            fileInfo.MoveTo(movePath);
+
+            // Еще один способ перемещения файлов
+            newInfo.Replace(destPath, resPath);
+
+
+            // Удаление файла
+            newInfo.Delete();
+
         }
     }
 }
