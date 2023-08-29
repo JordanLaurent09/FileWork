@@ -26,7 +26,25 @@ namespace FilesDirectoriesPartTwoProject
 
             }
 
+            // Выявление подкаталогов и папок
 
+            string dirName = "C:\\";
+            if(Directory.Exists(dirName))
+            {
+                Console.WriteLine("Подкаталоги:");
+                string[] dirs = Directory.GetDirectories(dirName);
+                foreach(string item in dirs)
+                {
+                    Console.WriteLine(item);
+                }
+
+                Console.WriteLine("Файлы");
+                string[] files = Directory.GetFiles(dirName);
+                foreach(string item in files)
+                {
+                    Console.WriteLine(item);
+                }
+            }
         }
     }
 }
