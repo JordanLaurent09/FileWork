@@ -74,7 +74,44 @@ namespace FileManager
                             dirCreate.Create();
                         }
                         break;
-
+                    case "deleteDir":
+                        DirectoryInfo dirInfo = new DirectoryInfo($@"{path}\{commands[1]}");
+                        if(dirInfo.Exists)
+                        {
+                            dirInfo.Delete(true);
+                            Console.WriteLine("Каталог удален");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Каталог не существует");
+                        }
+                        break;
+                    case "cd":
+                        switch(commands[1])
+                        {
+                            case "..":
+                                DirectoryInfo curInfo = new DirectoryInfo($@"{path}");
+                                DirectoryInfo newDir = curInfo.Parent;
+                                path = newDir.FullName;
+                                break;
+                            case "/":
+                                curInfo = new DirectoryInfo($@"{path}");
+                                DirectoryInfo rootDir = curInfo.Root;
+                                path = rootDir.FullName;
+                                break;
+                            default:
+                                curInfo = new DirectoryInfo($@"{path}\{commands[1]}");
+                                if(curInfo.Exists)
+                                {
+                                    path = curInfo.FullName;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Такого каталога не существует");
+                                }
+                                break;
+                        }
+                        break;
                 }
             }
         }
