@@ -55,6 +55,25 @@ namespace FileManager
                         break;
                     case "dir":
                         DirectoryInfo dir = new DirectoryInfo(path);
+                        if(dir.Exists)
+                        {
+                            foreach(DirectoryInfo item in dir.GetDirectories())
+                            {
+                                Console.WriteLine(item.Name);
+                            }
+                            foreach(FileInfo item in dir.GetFiles())
+                            {
+                                Console.WriteLine(item.Name + " " + item.Length + " " + item.CreationTime);
+                            }
+                        }
+                        break;
+                    case "mkdir":
+                        DirectoryInfo dirCreate = new DirectoryInfo($@"{path}\{commands[1]}");
+                        if(!dirCreate.Exists)
+                        {
+                            dirCreate.Create();
+                        }
+                        break;
 
                 }
             }
