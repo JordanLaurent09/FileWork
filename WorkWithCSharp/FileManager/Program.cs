@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace FileManager
 {
@@ -24,7 +25,20 @@ namespace FileManager
                         Console.WriteLine("move-перемещение переименование файла move source destination");
                         Console.WriteLine("delete-удаление файла delete file");
                         break;
-
+                    case "touch":
+                        FileStream file = File.Create($@"{path}\{commands[1]}");
+                        break;
+                    case "delete":
+                        FileInfo fileDel = new FileInfo($@"{path}\{commands[1]}");
+                        if(fileDel.Exists)
+                        {
+                            fileDel.Delete();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Файл не существует");
+                        }
+                        break;
                 }
             }
         }
