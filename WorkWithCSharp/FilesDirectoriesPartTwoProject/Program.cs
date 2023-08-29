@@ -45,6 +45,26 @@ namespace FilesDirectoriesPartTwoProject
                     Console.WriteLine(item);
                 }
             }
+
+            // Использование функционала класса DirectoryInfo
+
+            var directory = new DirectoryInfo(dirName);
+            if(directory.Exists)
+            {
+                Console.WriteLine("Папки:");
+                DirectoryInfo[] folders = directory.GetDirectories();
+                foreach(DirectoryInfo item in folders)
+                {
+                    Console.WriteLine(item);
+                }
+
+                Console.WriteLine("Файлы:");
+                FileInfo[] files = directory.GetFiles();
+                foreach(FileInfo item in files)
+                {
+                    Console.WriteLine(item);
+                }
+            }
         }
     }
 }
