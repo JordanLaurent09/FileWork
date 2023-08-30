@@ -62,6 +62,17 @@ namespace LinqAndLambdaProject
             // Calculation element's squares sum
             int sum = array.Select(i => i * i).Sum();
             Console.WriteLine(sum);
+
+            // Aggregate
+            Console.WriteLine(array.Aggregate((x,y)=>x*y));
+
+            // Some features
+            int k1 = 2, k2 = 8;
+            Console.WriteLine(array.Where((s,i)=>i >= k1&&i <= k2).Sum());
+            Console.WriteLine(array.Where((s,i)=>i >= k1&&i <= k2).Average());
+            Console.WriteLine(array.Take(10).Average());
+            Console.WriteLine(array.Where((s,i)=>i >= 11 && i <= 20).Average()); // s - элемент массива, i - его индекс
+            Console.WriteLine(array.Skip(20).Average());
         }
     }
 }
