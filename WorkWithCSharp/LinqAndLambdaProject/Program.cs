@@ -31,6 +31,25 @@ namespace LinqAndLambdaProject
             Console.WriteLine(array.Average());
             Console.WriteLine(array.Max());
             Console.WriteLine(array.Min());
+
+
+            // Lambda expressions
+
+            // Even numbers
+            int[] evens = array.Where(i => i % 2 == 0).ToArray();
+            foreach(int item in evens)
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine();
+
+            // Square roots of array's elements
+            double[] roots = array.Select(i => Math.Sqrt(i)).ToArray();
+            foreach(double item in roots)
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine();
         }
     }
 }
