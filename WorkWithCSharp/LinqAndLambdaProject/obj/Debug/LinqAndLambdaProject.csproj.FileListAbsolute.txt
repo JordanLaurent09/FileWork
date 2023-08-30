@@ -1,0 +1,7 @@
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\LinqAndLambdaProject\bin\Debug\LinqAndLambdaProject.exe.config
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\LinqAndLambdaProject\bin\Debug\LinqAndLambdaProject.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\LinqAndLambdaProject\bin\Debug\LinqAndLambdaProject.pdb
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\LinqAndLambdaProject\obj\Debug\LinqAndLambdaProject.csproj.AssemblyReference.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\LinqAndLambdaProject\obj\Debug\LinqAndLambdaProject.csproj.CoreCompileInputs.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\LinqAndLambdaProject\obj\Debug\LinqAndLambdaProject.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\LinqAndLambdaProject\obj\Debug\LinqAndLambdaProject.pdb
