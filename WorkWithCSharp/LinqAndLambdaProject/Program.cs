@@ -50,6 +50,18 @@ namespace LinqAndLambdaProject
                 Console.Write($"{item} ");
             }
             Console.WriteLine();
+
+            // Numbers contains in even indexes
+            int[] arrayResult = array.Where((s, i) => i % 2 == 0).ToArray();
+            foreach (double item in arrayResult)
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine();
+
+            // Calculation element's squares sum
+            int sum = array.Select(i => i * i).Sum();
+            Console.WriteLine(sum);
         }
     }
 }
