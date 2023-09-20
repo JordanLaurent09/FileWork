@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager", "FileManager\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqAndLambdaProject", "LinqAndLambdaProject\LinqAndLambdaProject.csproj", "{AEF9E7BB-45B2-4620-832A-BFB21482FA00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemTreeProject", "FileSystemTreeProject\FileSystemTreeProject.csproj", "{FF147049-CCF9-4588-8B12-94991489BBD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{AEF9E7BB-45B2-4620-832A-BFB21482FA00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEF9E7BB-45B2-4620-832A-BFB21482FA00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEF9E7BB-45B2-4620-832A-BFB21482FA00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF147049-CCF9-4588-8B12-94991489BBD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF147049-CCF9-4588-8B12-94991489BBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF147049-CCF9-4588-8B12-94991489BBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF147049-CCF9-4588-8B12-94991489BBD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
