@@ -1,0 +1,7 @@
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileSystemTreeProject\bin\Debug\FileSystemTreeProject.exe.config
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileSystemTreeProject\bin\Debug\FileSystemTreeProject.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileSystemTreeProject\bin\Debug\FileSystemTreeProject.pdb
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileSystemTreeProject\obj\Debug\FileSystemTreeProject.csproj.AssemblyReference.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileSystemTreeProject\obj\Debug\FileSystemTreeProject.csproj.CoreCompileInputs.cache
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileSystemTreeProject\obj\Debug\FileSystemTreeProject.exe
+C:\Users\Ольга\source\repos\FileWork\WorkWithCSharp\FileSystemTreeProject\obj\Debug\FileSystemTreeProject.pdb
